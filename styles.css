@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: white;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.balance-section {
+    background-color: #1e3a8a; /* Темно-синий цвет для соответствия скриншоту */
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.balance-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.balance-value {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.red-card {
+    background-color: #e53e3e; /* Красная карточка */
+}
+
+.yellow-card {
+    background-color: #bd7d0f; /* Желтая карточка */
+}
+
+.blue-card {
+    background-color: #3182ce; /* Синяя карточка */
+}
+
+.purple-card {
+    background-color: #805ad5; /* Фиолетовая карточка */
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-content {
+    font-size: 16px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-button {
+    background-color: #1e3a8a; /* Темно-синий фон для кнопок */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:hover {
+    background-color: #3b82f6; /* Светло-синий при наведении */
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 10px; /* Поднимаем переключатель тем чуть выше */
+    right: 20px;
+    z-index: 1000;
+}
+
+#theme-toggle-btn {
+    background-color: #e53e3e; /* Красный фон кнопки */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Делает кнопку круглой */
+    padding: 15px; /* Размер кнопки */
+    cursor: pointer;
+    font-size: 24px;
+    width: 50px; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#theme-toggle-btn:hover {
+    background-color: #d69e2e; /* Желтый при наведении */
+}
+
+/* Стили для темного режима */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+}
+
+body.dark-mode .container {
+    background-color: #2d2d2d;
+}
+
+body.dark-mode .balance-section {
+    background-color: #111;
+    color: #f1f1f1;
+}
+
+body.dark-mode .info-card {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+body.dark-mode .nav-button {
+    background-color: #333;
+}
+
+body.dark-mode .nav-button:hover {
+    background-color: #555;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e3a8a; /* Темно-синий фон */
+    padding: 10px 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav-button {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    flex: 1;
+}
+
+.bottom-nav-button i {
+    display: block;
+    margin: 0 auto;
+}
+
+.bottom-nav-button:hover {
+    color: #3b82f6; /* Светло-синий при наведении */
+}
+
+body.dark-mode .bottom-nav {
+    background-color: #333;
+}
+
+body.dark-mode .bottom-nav-button:hover {
+    color: #555;
+}
+

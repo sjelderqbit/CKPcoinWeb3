@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CKPcoin Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="preloader.css"> <!-- Подключаем стили для preloader -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <img id="preloader-image" src="preloader-image.png" alt="Loading...">
+    </div>
+
+    <div class="container" id="content">
+        <header>
+            <div class="balance-section">
+                <div class="balance-header">
+                    <p class="balance-value">600</p>
+                    <img src="logo.png" alt="CKPcoin Logo" class="logo" style="margin-left: 10px;">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="info-cards">
+                <div class="info-card red-card">
+                    <p class="card-title">Лидеры 👑</p>
+                    <p class="card-content">22-е место из 108</p>
+                </div>
+                <div class="info-card yellow-card">
+                    <p class="card-title">Начисления за месяц 🚀</p>
+                    <p class="card-content">+450 <img src="scr.png" alt="CKPcoin Logo" class="logo" style="width: 20%;"></p>
+                </div>
+                <div class="info-card blue-card">
+                    <p class="card-title">Цель 🎯</p>
+                    <p class="card-content">600 / 3000</p>
+                </div>
+                <div class="info-card purple-card">
+                    <p class="card-title">Мой профиль 📋</p>
+                </div>
+            </section>
+
+            <section class="navigation">
+                <a href="pres.pdf" class="nav-button">Дорожная карта</a>
+                <a href="#" class="nav-button">Поддержка проекта</a>
+            </section>
+        </main>
+
+        <!-- Переключатель темы -->
+        <section class="theme-toggle">
+            <button id="theme-toggle-btn">
+                <i id="theme-icon" class="fas fa-sun"></i>
+            </button>
+        </section>
+
+        <!-- Нижняя навигация -->
+        <footer>
+            <nav class="bottom-nav">
+                <a href="#" class="bottom-nav-button">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a href="#" class="bottom-nav-button">
+                    <i class="fas fa-wallet"></i>
+                </a>
+                <a href="#" class="bottom-nav-button">
+                    <i class="fas fa-user"></i>
+                </a>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="preloader.js"></script> <!-- Подключаем JavaScript для preloader -->
+    <script src="script.js"></script> <!-- Основной JavaScript -->
+</body>
+</html>
