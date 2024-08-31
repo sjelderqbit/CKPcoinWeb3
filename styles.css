@@ -25,7 +25,7 @@ header {
 }
 
 .balance-section {
-    background-color: #1e3a8a; /* Темно-синий цвет для соответствия скриншоту */
+    background-color: #1e3a8a;
     color: white;
     padding: 20px;
     border-radius: 15px;
@@ -102,7 +102,7 @@ header {
 }
 
 .nav-button {
-    background-color: #1e3a8a; /* Темно-синий фон для кнопок */
+    background-color: #1e3a8a;
     color: white;
     padding: 15px;
     border: none;
@@ -115,26 +115,26 @@ header {
 }
 
 .nav-button:hover {
-    background-color: #3b82f6; /* Светло-синий при наведении */
+    background-color: #3b82f6;
 }
 
 .theme-toggle {
     position: absolute;
-    top: 10px; /* Поднимаем переключатель тем чуть выше */
+    top: 10px; 
     right: 20px;
     z-index: 1000;
 }
 
 #theme-toggle-btn {
-    background-color: #e53e3e; /* Красный фон кнопки */
+    background-color: #e53e3e;
     color: white;
     border: none;
-    border-radius: 50%; /* Делает кнопку круглой */
-    padding: 15px; /* Размер кнопки */
+    border-radius: 50%;
+    padding: 15px;
     cursor: pointer;
     font-size: 24px;
-    width: 50px; /* Ширина кнопки */
-    height: 50px; /* Высота кнопки */
+    width: 50px; 
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,10 +143,10 @@ header {
 }
 
 #theme-toggle-btn:hover {
-    background-color: #d69e2e; /* Желтый при наведении */
+    background-color: #d69e2e;
 }
 
-/* Стили для темного режима */
+
 body.dark-mode {
     background-color: #1e1e1e;
     color: #f1f1f1;
@@ -181,7 +181,7 @@ body.dark-mode .nav-button:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #1e3a8a; /* Темно-синий фон */
+    background-color: #1e3a8a; 
     padding: 10px 0;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -199,7 +199,7 @@ body.dark-mode .nav-button:hover {
 }
 
 .bottom-nav-button:hover {
-    color: #3b82f6; /* Светло-синий при наведении */
+    color: #3b82f6;
 }
 
 body.dark-mode .bottom-nav {

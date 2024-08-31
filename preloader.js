@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const preloader = document.getElementById('preloader');
     const content = document.getElementById('content');
 
-    // Скроет preloader и покажет основной контент через задержку после полной загрузки
+    // Скроет анимацию и покажет основной контент через задержку после полной загрузки
     window.addEventListener('load', () => {
         setTimeout(() => {
             preloader.style.opacity = '0';
